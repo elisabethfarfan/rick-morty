@@ -10,7 +10,7 @@ export const Character = (props) => {
         <h1>Personajes</h1>
         <span className="back-home"  onClick={resertCharacters}>Home</span>
 
-        <div className="container-characteres">
+        <div className="container-characters">
             {characters.map((character, index) =>(
                 <div className="character-container" key={index}>
                     <div>
@@ -20,11 +20,11 @@ export const Character = (props) => {
                         <h3>{character.name}</h3> 
                         <h6>{character.status ==='alive' ? (
                             <>
-                            <span className="Alive">Alive</span>
+                            <span className="alive"> Alive</span>
                             </>
                              ):(
                             <>
-                            <span className="dead">Dead</span>
+                            <span className="dead"> Dead</span>
                             </>
                              )}
                         </h6>
